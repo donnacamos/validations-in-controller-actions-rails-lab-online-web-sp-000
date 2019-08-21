@@ -11,8 +11,8 @@ class PostsController < ApplicationController
     @post.update(post_params)
     if @post.save
       redirect_to post_path(@post)
-    else 
-      render :new   
+    else
+      render :new
   end
 
   private
